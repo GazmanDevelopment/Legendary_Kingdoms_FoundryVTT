@@ -1,0 +1,114 @@
+{
+  "Actor": {
+    "types": ["character", "party_group","army","fleet","battlefield"],
+    "character": {
+      "biography": "",
+      "notes": "",
+      "health": {
+        "value": 5,
+        "min": 0,
+        "max": 10
+      },
+      "armor": {
+        "value": 0
+      },
+      "attributes": {
+        "Fighting": {
+          "value": 5,
+          "min": 0,
+          "max": 99
+        },
+        "Stealth": {
+          "value": 5,
+          "max": 10
+        },
+        "Lore": {
+          "value": 5,
+          "min": 0,
+          "max": 99
+        },
+        "Survival": {
+          "value": 5,
+          "min": 0,
+          "max": 99          
+        },
+        "Charisma": {
+          "value": 5,
+          "min": 0,
+          "max": 99
+        }
+      },
+      "groups": {}
+    },
+    "party_group": {
+      "notes": "",
+      "silver": {
+		  "value": 0,
+		  "min": 0,
+		  "max": 9999999
+	  },
+      "current_location": {
+		  "value": 0,
+		  "min": 0,
+		  "max": 99999
+	  }
+    },
+    "fleet": {
+		"notes": ""
+	},
+    "army": {
+      "unit": "",
+      "strength": 0,
+      "morale": 0,
+      "garrison": ""
+    },
+    "battlefield": {
+      "enemy_flank_left_support": 0,
+      "enemy_flank_left_front": 0,
+      "enemy_flank_right_support": 0,
+      "enemy_flank_right_front": 0,
+      "enemy_centre_support": 0,
+      "enemy_centre_front": 0,
+      "player_flank_left_support": 0,
+      "player_flank_left_front": 0,
+      "player_flank_right_support": 0,
+      "player_flank_right_front": 0,
+      "player_centre_support": 0,
+      "player_centre_front": 0
+    }
+  },
+  "Item": {
+    "types": ["item", "spell", "code", "ship"],
+    "item": {      
+	  "isItem": 1,
+	  "description": "",
+      "quantity": 1,
+      "weight": 0,
+      "attributes": {},
+      "groups": {}
+    },
+    "spell": {
+	  "isSpell": 1,
+      "name": "",
+      "class": ["Combat","Adventure"],
+      "description": "",
+      "recharge_cost": 0,
+      "uses": 0
+    },
+	"code": {
+	  "isCode": 1
+	},
+	"ship": {
+	  "isShip": 1,
+	  "health": 0,
+	  "cargo": "",
+	  "cargo_units": 0,
+	  "location": "",
+	  "health": 0,
+	  "max_health": 0,
+	  "fighting": 0,
+	  "max_fighting": 0,
+	  "ship_notes": ""
+	}
+  }
+}

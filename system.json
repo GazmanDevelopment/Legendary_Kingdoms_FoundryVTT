@@ -1,0 +1,20 @@
+{
+	"name": "foundry_legendary_kingdoms",
+	"title": "Legendary Kingdoms",
+	"description": "A simple way to electronically track Legendary Kingdoms games.  Built using the Simple Worldbuilding template provided by Atropos.",
+	"version": "0.6.8",
+	"minimumCoreVersion": "0.8.9",
+	"compatibleCoreVersion": "9",
+	"author": "Gazman Development",
+	"esmodules": ["module/simple.js"],
+  	"styles": ["styles/simple.css"],
+	"languages" : [
+		{
+			"lang": "en",
+			"name": "English",
+			"path": "lang/en.json"
+		}
+	],
+
+	"license": "LICENSE.txt"
+}
