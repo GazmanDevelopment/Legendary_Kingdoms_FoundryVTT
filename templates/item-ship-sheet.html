@@ -1,0 +1,60 @@
+<form class="flexcol {{cssClass}}" autocomplete="off">
+    <header class="sheet-header-ship">
+        <div class="header-fields-ship">
+            <h1 class="charname">
+                <input name="name" type="text" value="{{data.name}}" placeholder="Name" />
+            </h1>
+            <div class="resource">
+                <label class="attributes-header">Health Current / Maximum</label><br />
+                <input type="number" name="data.health" value="{{systemData.health}}"/>
+                <span> / </span>
+                <input type="number" name="data.max_health" value="{{systemData.max_health}}"/>
+            </div>
+			<div class="resource">
+                <label class="attributes-header">Fighting Current / Maximum</label><br />
+                <input type="number" name="data.fighting" value="{{systemData.fighting}}"/>
+                <span> / </span>
+                <input type="number" name="data.max_fighting" value="{{systemData.max_fighting}}"/>
+            </div>
+			<br /><br />
+			<div class="resource">
+				<label class="attributes-header">Cargo Description / Units</label><br />
+				<input type="text" name="data.cargo" value="{{systemData.cargo}}" />
+				<span> / </span>
+                <input type="number" name="data.cargo_units" value="{{systemData.cargo_units}}"/>
+			</div>
+			<div class="resource">
+				<label class="attributes-header">Current Location</label><br />
+				<input type="text" name="data.location" value="{{systemData.location}}" />
+			</div>
+    </header>
+
+    {{!-- Sheet Tab Navigation --}}
+    <nav class="sheet-tabs tabs" data-group="primary">
+        <!--<a class="item" data-tab="details">Ship Details</a>-->
+        <a class="item" data-tab="notes">Notes</a>
+    </nav>
+
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+
+        {{!-- Attributes Tab --}}
+        <!--div class="tab attributes" data-group="primary" data-tab="details">
+            <div class="resource">
+				<label class="attributes-header">Cargo Description / Units</label><br />
+				<input type="text" name="data.cargo" value="{{systemData.cargo}}" />
+				<span> / </span>
+                <input type="number" name="data.cargo_units" value="{{systemData.cargo_units}}"/>
+			</div>
+			<div class="resource">
+				<label class="attributes-header">Current Location</label><br />
+				<input type="text" name="data.location" value="{{systemData.location}}" />
+			</div>
+        </div-->
+		
+		{{!-- Notes Tab --}}
+        <div class="tab description" data-group="primary" data-tab="notes">
+            {{editor content=systemData.notes target="data.notes" button=true owner=owner editable=editable rollData=rollData}}
+        </div>
+    </section>
+</form>

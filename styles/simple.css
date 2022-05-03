@@ -1,0 +1,272 @@
+.foundry_legendary_kingdoms {
+  /* Sheet Tabs */
+  /* Items List */
+  /* Attributes */
+}
+.foundry_legendary_kingdoms .window-content {
+  height: 100%;
+  padding: 5px;
+  overflow-y: hidden;
+}
+.foundry_legendary_kingdoms form {
+  height: 100%;
+}
+.foundry_legendary_kingdoms .sheet-header {
+  flex: 0 0 115px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+.foundry_legendary_kingdoms .sheet-header-ship {
+  flex: 0 0 165px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+.foundry_legendary_kingdoms .sheet-header .profile-img {
+  flex: 0 0 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+.foundry_legendary_kingdoms .sheet-header .header-fields {
+  flex: 1;
+  height: 115px;
+}
+.foundry_legendary_kingdoms .sheet-header .header-fields-ship {
+  flex: 1;
+  height: 165px;
+}
+.foundry_legendary_kingdoms .sheet-header h1.charname {
+  height: 50px;
+  padding: 0px;
+  margin: 5px 0;
+  border-bottom: 0;
+}
+.foundry_legendary_kingdoms .sheet-header h1.charname input {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.foundry_legendary_kingdoms .resource {
+  width: 50%;
+  height: 40px;
+  margin-top: 10px;
+  float: left;
+  text-align: center;
+}
+.foundry_legendary_kingdoms .resource input {
+  width: 100px;
+  height: 28px;
+}
+.foundry_legendary_kingdoms .tabs {
+  flex: 0 0 40px;
+  border-top: 1px solid #AAA;
+  border-bottom: 1px solid #AAA;
+}
+.foundry_legendary_kingdoms .tabs .item {
+  line-height: 40px;
+  font-weight: bold;
+}
+.foundry_legendary_kingdoms .tabs .item.active {
+  text-decoration: underline;
+  text-shadow: none;
+}
+.foundry_legendary_kingdoms .sheet-body {
+  overflow: hidden;
+}
+.foundry_legendary_kingdoms .sheet-body .tab {
+  height: 100%;
+  overflow-y: auto;
+}
+.foundry_legendary_kingdoms .editor,
+.foundry_legendary_kingdoms .editor-content {
+  height: 100%;
+}
+.foundry_legendary_kingdoms .item-list {
+  list-style: none;
+  margin: 7px 0;
+  padding: 0;
+  overflow-y: auto;
+}
+.foundry_legendary_kingdoms .item-list .item {
+  min-height: 30px;
+  line-height: 24px;
+  padding: 3px 0;
+  border-bottom: 1px solid #BBB;
+  align-items: stretch;
+}
+.foundry_legendary_kingdoms .item-list .item img {
+  flex: 0 0 24px;
+  margin-right: 5px;
+}
+.foundry_legendary_kingdoms .item-list .item-name {
+  margin: 0;
+}
+.foundry_legendary_kingdoms .item-list .item-controls {
+  flex: 0 0 36px;
+}
+.foundry_legendary_kingdoms .item-list .item-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  flex: 2;
+  justify-content: flex-start;
+}
+.foundry_legendary_kingdoms .item-list .item-button {
+  line-height: 1;
+  font-size: 11px;
+  flex: none;
+  width: auto;
+}
+.foundry_legendary_kingdoms .attributes {
+  position: relative;
+}
+.foundry_legendary_kingdoms .attributes .attribute-control,
+.foundry_legendary_kingdoms .attributes .group-control {
+  flex: 0 0 20px;
+  text-align: center;
+  line-height: 28px;
+  border: none;
+}
+.foundry_legendary_kingdoms .attributes .attribute-roll {
+  flex: 0 0 20px;
+  text-align: center;
+  border-bottom: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.foundry_legendary_kingdoms .attributes .group-prefix {
+  height: 31px;
+  margin-right: 10px;
+}
+.foundry_legendary_kingdoms .attributes .button {
+  width: 100%;
+  flex: 1;
+  margin: 0;
+  background: rgba(0, 0, 0, 0.1);
+  border: 2px groove #f0f0e0;
+  border-radius: 3px;
+  font-size: 14px;
+  line-height: 28px;
+  display: block;
+}
+.foundry_legendary_kingdoms .attributes .attribute-key {
+  background: transparent;
+  border: none;
+}
+.foundry_legendary_kingdoms .attributes-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  align-items: center;
+  padding: 0 5px;
+  margin: 5px 0;
+  background: #cfcdc2;
+  border: 1px solid #AAA;
+  border-radius: 2px;
+  text-align: left;
+  font-weight: bold;
+}
+.foundry_legendary_kingdoms .attributes-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.foundry_legendary_kingdoms .attributes-list li > * {
+  margin: 0 3px;
+  height: 28px;
+  line-height: 24px;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #AAA;
+}
+.foundry_legendary_kingdoms .attributes-list .attribute-col label {
+  font-size: 10px;
+  text-align: center;
+  line-height: 1;
+}
+.foundry_legendary_kingdoms .attributes-list .attribute-col-fleet-sm {
+  font-size: 10px;
+  text-align: center;
+  line-height: 1;
+  float: left;
+  width: 10%
+}
+.foundry_legendary_kingdoms .attributes-list .attribute-col-fleet-lg {
+  font-size: 10px;
+  text-align: center;
+  line-height: 1;
+  float: left;
+  width: 30%
+}
+.foundry_legendary_kingdoms .attributes-list .attribute-col input {
+  font-size: 11px;
+  text-align: center;
+  line-height: 1;
+  height: 50%;
+}
+.foundry_legendary_kingdoms .attribute input[type="text"]::placeholder,
+.foundry_legendary_kingdoms .group-header input[type="text"]::placeholder {
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
+}
+.foundry_legendary_kingdoms .attribute input[type="text"]:focus::placeholder,
+.foundry_legendary_kingdoms .group-header input[type="text"]:focus::placeholder {
+  opacity: 1;
+}
+.foundry_legendary_kingdoms .group-controls {
+  margin: 5px;
+}
+.foundry_legendary_kingdoms .groups-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.foundry_legendary_kingdoms .group {
+  margin: 5px 0 0;
+  padding: 0;
+}
+.foundry_legendary_kingdoms .group-header {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid #AAA;
+  border-radius: 2px;
+  padding: 2px 5px;
+}
+.foundry_legendary_kingdoms .group-key,
+.foundry_legendary_kingdoms .group-label {
+  font-weight: bold;
+  border: none;
+  border-bottom: 1px solid #AAA;
+  background: transparent;
+  border-radius: 0;
+  margin-right: 6px;
+}
+.foundry_legendary_kingdoms .group-key {
+  opacity: 0.75;
+}
+.foundry_legendary_kingdoms .group-label {
+  flex: 2;
+}
+.foundry_legendary_kingdoms .group-dtype {
+  height: 24px;
+  flex: 0 0 116px;
+  margin: 0 5px;
+}
+.foundry_legendary_kingdoms.sheet.actor {
+  min-width: 560px;
+  min-height: 420px;
+}
+.foundry_legendary_kingdoms.sheet.item {
+  min-width: 460px;
+  min-height: 400px;
+}
