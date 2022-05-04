@@ -15,27 +15,23 @@
       "attributes": {
         "Fighting": {
           "value": 5,
-          "min": 0,
-          "max": 99
+          "max": 0
         },
         "Stealth": {
           "value": 5,
-          "max": 10
+          "max": 0
         },
         "Lore": {
           "value": 5,
-          "min": 0,
-          "max": 99
+          "max": 0
         },
         "Survival": {
           "value": 5,
-          "min": 0,
-          "max": 99          
+          "max": 0          
         },
         "Charisma": {
           "value": 5,
-          "min": 0,
-          "max": 99
+          "max": 0
         }
       },
       "groups": {}
@@ -57,10 +53,7 @@
 		"notes": ""
 	},
     "army": {
-      "unit": "",
-      "strength": 0,
-      "morale": 0,
-      "garrison": ""
+	  "notes": ""
     },
     "battlefield": {
       "enemy_flank_left_support": 0,
@@ -74,22 +67,25 @@
       "player_flank_right_support": 0,
       "player_flank_right_front": 0,
       "player_centre_support": 0,
-      "player_centre_front": 0
+      "player_centre_front": 0,
+	  "notes": ""
     }
   },
   "Item": {
-    "types": ["item", "spell", "code", "ship"],
+    "types": ["item", "spell", "code", "ship", "army"],
     "item": {      
 	  "isItem": 1,
 	  "description": "",
       "quantity": 1,
       "weight": 0,
+	  "attrib_mod": "",
+	  "mod_val": 0,
+	  "notes": "",
       "attributes": {},
       "groups": {}
     },
     "spell": {
 	  "isSpell": 1,
-      "name": "",
       "class": ["Combat","Adventure"],
       "description": "",
       "recharge_cost": 0,
@@ -109,6 +105,15 @@
 	  "fighting": 0,
 	  "max_fighting": 0,
 	  "ship_notes": ""
+	},
+	"army": {
+	  "isArmy": 1,
+      "strength": 0,
+	  "max_strength": 0,
+      "morale": 0,
+	  "max_morale": 0,
+      "garrison": "",
+	  "notes": ""
 	}
   }
 }

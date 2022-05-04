@@ -1,0 +1,87 @@
+<form class="flexcol {{cssClass}}" autocomplete="off">
+
+    {{!-- Sheet Header --}}
+    <header class="sheet-header" style="flex: 0 0 35px">
+        <div class="header-fields">
+            <h1 class="charname">
+                {{data.name}}
+            </h1>
+    </header>
+
+    {{!-- Sheet Tab Navigation --}}
+    <nav class="sheet-tabs tabs" data-group="primary">
+        <a class="item" data-tab="bf">{{localize "SIMPLE.Battlefield"}}</a>
+        <a class="item" data-tab="notes">{{localize "SIMPLE.Notes"}}</a>
+    </nav>
+
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+
+        {{!-- Codes Tab --}}
+        <div class="tab attributes" data-group="primary" data-tab="bf">
+			<header class="attributes-header flexrow">
+				{{localize "SIMPLE.BF.Enemy"}}
+			</header>
+			<div class="battefield">
+				<label class="attributes-header" style="width: 33%">{{localize "SIMPLE.BF.SupportLeft"}}</label> 
+				<input type="number" name="data.enemy_flank_left_support" value="{{systemData.enemy_flank_left_support}}"/> 
+			</div>
+			<div class="battefield">
+				<label class="attributes-header" style="width: 33%">{{localize "SIMPLE.BF.SupportCentre"}}</label> 
+				<input type="number" name="data.enemy_centre_support" value="{{systemData.enemy_centre_support}}"/>
+			</div>
+			<div class="battefield">
+				<label class="attributes-header" style="width: 33%">{{localize "SIMPLE.BF.SupportRight"}}</label>
+				<input type="number" name="data.enemy_flank_right_support" value="{{systemData.enemy_flank_right_support}}"/>
+			</div>
+			<br /> 
+			<div class="battefield">
+                <label class="attributes-header">{{localize "SIMPLE.BF.FrontLeft"}}</label><br />
+                <input type="number" name="data.enemy_flank_left_front" value="{{systemData.enemy_flank_left_front}}"/>
+            </div>
+			<div class="battefield">
+                <label class="attributes-header">{{localize "SIMPLE.BF.FrontCentre"}}</label><br />
+                <input type="number" name="data.enemy_centre_front" value="{{systemData.enemy_centre_front}}"/>
+            </div>
+			<div class="battefield">
+                <label class="attributes-header">{{localize "SIMPLE.BF.FrontRight"}}</label><br />
+                <input type="number" name="data.enemy_flank_right_front" value="{{systemData.enemy_flank_right_front}}"/>
+            </div>
+			<br /><br />
+		
+			<header class="attributes-header flexrow">
+				{{localize "SIMPLE.BF.Your"}}
+			</header>
+			<div class="battefield">
+                <label class="attributes-header">{{localize "SIMPLE.BF.FrontLeft"}}</label><br />
+                <input type="number" name="data.player_flank_left_front" value="{{systemData.player_flank_left_front}}"/>
+            </div>
+			<div class="battefield">
+                <label class="attributes-header">{{localize "SIMPLE.BF.FrontCentre"}}</label><br />
+                <input type="number" name="data.player_centre_front" value="{{systemData.player_centre_front}}"/>
+            </div>
+			<div class="battefield">
+                <label class="attributes-header">{{localize "SIMPLE.BF.FrontRight"}}</label><br />
+                <input type="number" name="data.player_flank_right_front" value="{{systemData.player_flank_right_front}}"/>
+            </div>
+			<br />
+			<div class="battefield">
+                <label class="attributes-header">{{localize "SIMPLE.BF.SupportLeft"}}</label><br />
+                <input type="number" name="data.player_flank_left_support" value="{{systemData.player_flank_left_support}}"/>
+            </div>
+			<div class="battefield">
+                <label class="attributes-header">{{localize "SIMPLE.BF.SupportCentre"}}</label><br />
+                <input type="number" name="data.player_centre_support" value="{{systemData.player_centre_support}}"/>
+            </div>
+			<div class="battefield">
+                <label class="attributes-header">{{localize "SIMPLE.BF.SupportRight"}}</label><br />
+                <input type="number" name="data.player_flank_right_support" value="{{systemData.player_flank_right_support}}"/>
+            </div>			
+		</div>
+		
+        {{!-- Notes Tab --}}
+        <div class="tab description" data-group="primary" data-tab="notes">
+            {{editor content=systemData.notes target="data.notes" button=true owner=owner editable=editable rollData=rollData}}
+        </div>
+    </section>
+</form>

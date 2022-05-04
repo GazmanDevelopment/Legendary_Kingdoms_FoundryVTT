@@ -89,15 +89,27 @@ export class SimpleActorSheet extends ActorSheet {
         return cls.create({name: game.i18n.localize("SIMPLE.CodeCreate"), type: "code"}, {parent: this.actor});
 	  case "create_ship":
         return cls.create({name: game.i18n.localize("SIMPLE.ShipCreate"), type: "ship"}, {parent: this.actor});
+	  case "create_army":
+        return cls.create({name: game.i18n.localize("SIMPLE.ArmyCreate"), type: "army"}, {parent: this.actor});
+	  case "create_spell":
+        return cls.create({name: game.i18n.localize("SIMPLE.SpellCreate"), type: "spell"}, {parent: this.actor});
       case "edit_code":
         return item.sheet.render(true);
       case "edit_ship":
+        return item.sheet.render(true);
+	  case "edit_army":
+        return item.sheet.render(true);
+	  case "edit_spell":
         return item.sheet.render(true);
 	  case "edit":
         return item.sheet.render(true);
       case "delete_code":
         return item.delete();
+	  case "delete_spell":
+        return item.delete();
       case "delete_ship":
+        return item.delete();
+	  case "delete_army":
         return item.delete();
       case "delete":
         return item.delete();

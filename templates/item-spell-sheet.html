@@ -1,0 +1,39 @@
+<form class="flexcol {{cssClass}}" autocomplete="off">
+    <header class="sheet-header-ship">
+        <div class="header-fields-ship">
+            <h1 class="charname">
+                <input name="name" type="text" value="{{data.name}}" placeholder="Name" />
+            </h1>
+            <div class="battefield">
+                <label class="attributes-header">{{localize "SIMPLE.Spell.ClassUsed"}}</label><br />
+                <input type="text" name="data.class" value="{{systemData.class}}"/>
+            </div>
+			<div class="battefield">
+				<label class="attributes-header">{{localize "SIMPLE.Spell.Recharge"}}</label><br />
+				<input type="number" name="data.recharge_cost" value="{{systemData.recharge_cost}}" />
+			</div>
+			<div class="battefield">
+				<label class="attributes-header">{{localize "SIMPLE.Spell.UsesLeft"}}</label><br />
+				<input type="number" name="data.uses" value="{{systemData.uses}}" />
+			</div>
+			<br /><br />
+			<div class="resource_full_width">
+                <label class="attributes-header">{{localize "SIMPLE.Spell.Desc"}}</label><br />
+                <input type="text" name="data.description" value="{{systemData.description}}" style="width: 450px" />
+            </div>
+    </header>
+
+    {{!-- Sheet Tab Navigation --}}
+    <nav class="sheet-tabs tabs" data-group="primary">
+        <a class="item" data-tab="notes">{{localize "SIMPLE.Notes"}}</a>
+    </nav>
+
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+		
+		{{!-- Notes Tab --}}
+        <div class="tab description" data-group="primary" data-tab="notes">
+            {{editor content=systemData.notes target="data.notes" button=true owner=owner editable=editable rollData=rollData}}
+        </div>
+    </section>
+</form>

@@ -1,0 +1,39 @@
+<form class="flexcol {{cssClass}}" autocomplete="off">
+    <header class="sheet-header-ship">
+        <div class="header-fields-ship">
+            <h1 class="charname">
+                <input name="name" type="text" value="{{data.name}}" placeholder="Name" />
+            </h1>
+            <div class="resource">
+                <label class="attributes-header">{{localize "SIMPLE.Army.MoraleMax"}}</label><br />
+                <input type="number" name="data.morale" value="{{systemData.morale}}"/>
+                <span> / </span>
+                <input type="number" name="data.max_morale" value="{{systemData.max_morale}}"/>
+            </div>
+			<div class="resource">
+                <label class="attributes-header">{{localize "SIMPLE.Army.StrengthMax"}}</label><br />
+                <input type="number" name="data.strength" value="{{systemData.strength}}"/>
+                <span> / </span>
+                <input type="number" name="data.max_strength" value="{{systemData.max_strength}}"/>
+            </div>
+			<br /><br />
+			<div class="resource_full_width">
+				<label class="attributes-header">{{localize "SIMPLE.Army.Garrison"}}</label><br />
+				<input type="text" name="data.garrison" value="{{systemData.garrison}}" style="width: 300px" />
+			</div>
+    </header>
+
+    {{!-- Sheet Tab Navigation --}}
+    <nav class="sheet-tabs tabs" data-group="primary">
+        <a class="item" data-tab="notes">{{localize "SIMPLE.Notes"}}</a>
+    </nav>
+
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+		
+		{{!-- Notes Tab --}}
+        <div class="tab description" data-group="primary" data-tab="notes">
+            {{editor content=systemData.notes target="data.notes" button=true owner=owner editable=editable rollData=rollData}}
+        </div>
+    </section>
+</form>

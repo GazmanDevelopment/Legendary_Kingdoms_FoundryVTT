@@ -4,16 +4,43 @@
   "SETTINGS.SimpleInitFormulaN": "Initiative Formula",
   "SETTINGS.SimpleInitFormulaL": "Enter an initiative formula, such as d20+@dex",
 
-  "SIMPLE.ItemCreate": "Create Item",
+  "SIMPLE.Party.Silver": "Party Silver",
+  "SIMPLE.Party.Location": "Current Location",
+  "SIMPLE.Party.Codes": "Codes",
+  "SIMPLE.Party.Vault": "Vault",
+  
+  "SIMPLE.Actor.Health": "Health Current / Maximum",
+  "SIMPLE.Actor.Armour": "Armour Current",
+  "SIMPLE.Actor.Attribs": "Attributes",
+  "SIMPLE.Actor.Items": "Items",
+  "SIMPLE.Actor.Spells": "Spells",
+  "SIMPLE.Actor.Bio": "Biography",
+  
+  "SIMPLE.ItemCreate": "New Item",
   "SIMPLE.ItemEdit": "Edit Item",
   "SIMPLE.ItemDelete": "Delete Item",
   "SIMPLE.ItemNew": "New Item",
+  "SIMPLE.Item.ItemName": "Item Name",
+  "SIMPLE.Item.Atrrib": "Attribute",
+  "SIMPLE.Item.AtrribFull": "Modified Attribute",
+  "SIMPLE.Item.ModVal": "Modifier",
+  "SIMPLE.Item.Weight": "Weight",
+  "SIMPLE.Item.Qty": "Qty",
   
-  "SIMPLE.CodeCreate": "Add Code",
+  "SIMPLE.SpellCreate": "New Spell",
+  "SIMPLE.SpellEdit": "Edit Spell",
+  "SIMPLE.SpellDelete": "Delete Spell",
+  "SIMPLE.Spell.SpellName": "Spell Name",
+  "SIMPLE.Spell.ClassUsed": "Class",
+  "SIMPLE.Spell.Desc": "Description",
+  "SIMPLE.Spell.Recharge": "Recharge Cost",
+  "SIMPLE.Spell.UsesLeft": "Uses",  
+  
+  "SIMPLE.CodeCreate": "New Code",
   "SIMPLE.CodeEdit": "Edit Code",
   "SIMPLE.CodeDelete": "Delete Code",
   
-  "SIMPLE.ShipCreate": "Add Ship",
+  "SIMPLE.ShipCreate": "New Ship",
   "SIMPLE.ShipEdit": "Edit Ship",
   "SIMPLE.ShipDelete": "Delete Ship",
   
@@ -25,7 +52,30 @@
   "SIMPLE.Fleet.Fighting": "Fight",
   "SIMPLE.Fleet.Max_Health": "Max Health",
   "SIMPLE.Fleet.Max_Fight": "Max Fight",
+  "SIMPLE.Fleet.Ships": "Ships",
+  
+  "SIMPLE.ArmyCreate": "New Army",
+  "SIMPLE.ArmyEdit": "Edit Army",
+  "SIMPLE.ArmyDelete": "Delete Army",
+  
+  "SIMPLE.Army.Name": "Army",
+  "SIMPLE.Army.Strength": "Strength",
+  "SIMPLE.Army.StrengthMax": "Strength Current / Max",
+  "SIMPLE.Army.Morale": "Morale",
+  "SIMPLE.Army.MoraleMax": "Morale Current / Max",
+  "SIMPLE.Army.Garrison": "Garrison",
+  "SIMPLE.Armies": "Armies",
 
+  "SIMPLE.Battlefield": "Battlefield",
+  "SIMPLE.BF.Enemy": "The Enemy",
+  "SIMPLE.BF.Your": "Your Forces",
+  "SIMPLE.BF.SupportLeft": "Left Flank Support",
+  "SIMPLE.BF.SupportCentre": "Centre Flank Support",
+  "SIMPLE.BF.SupportRight": "Right Flank Support",
+  "SIMPLE.BF.FrontLeft": "Left Flank Front",
+  "SIMPLE.BF.FrontCentre": "Centre Flank Front",
+  "SIMPLE.BF.FrontRight": "Right Flank Front", 
+  
   "SIMPLE.NotifyInitFormulaUpdated": "Initiative formula was updated to",
   "SIMPLE.NotifyInitFormulaInvalid": "Initiative formula was invalid",
   "SIMPLE.NotifyGroupDuplicate": "Attribute group already exists.",
@@ -51,5 +101,9 @@
   "SIMPLE.DeleteGroupContent": "Do you wish to delete this group? This will delete the following group and all attributes included in it: ",
 
   "SIMPLE.Create": "Create",
-  "SIMPLE.New": "New"
+  "SIMPLE.New": "New",
+  
+  "SIMPLE.Notes": "Notes",
+  "SIMPLE.Desc": "Description",
+  "SIMPLE.FightingMax": "Fighting Current / Max"
 }

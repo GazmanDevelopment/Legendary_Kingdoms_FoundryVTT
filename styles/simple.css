@@ -60,6 +60,19 @@
   float: left;
   text-align: center;
 }
+.foundry_legendary_kingdoms .resource_full_width {
+  height: 40px;
+  margin-top: 10px;
+  float: left;
+  text-align: center;
+}
+.foundry_legendary_kingdoms .battefield {
+  width: 33%;
+  height: 40px;
+  margin-top: 10px;
+  float: left;
+  text-align: center;
+}
 .foundry_legendary_kingdoms .resource input {
   width: 100px;
   height: 28px;

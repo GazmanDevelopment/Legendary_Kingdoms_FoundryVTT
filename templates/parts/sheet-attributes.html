@@ -35,7 +35,7 @@
                 data-dtype="{{attr.dtype}}" placeholder="{{localize "SIMPLE.AttributeValue"}}"/>
             {{/if}}
             {{/if}}        
-            <input class="attribute-label" type="text" name="data.attributes.{{#if attr.group}}{{attr.group}}.{{/if}}{{key}}.label" value="{{attr.max}}"
+            <input class="attribute-value" type="text" name="data.attributes.{{#if attr.group}}{{attr.group}}.{{/if}}{{key}}.max" value="{{attr.max}}"
                 placeholder="{{localize "SIMPLE.AttributeLabel"}}"/>
             <input type="hidden" name="data.attributes.{{#if attr.group}}{{attr.group}}.{{/if}}{{key}}.group" value="{{attr.group}}" />
         </li>

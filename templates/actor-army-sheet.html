@@ -11,7 +11,7 @@
 
     {{!-- Sheet Tab Navigation --}}
     <nav class="sheet-tabs tabs" data-group="primary">
-        <a class="item" data-tab="ships">{{localize "SIMPLE.Fleet.Ships"}}</a>
+        <a class="item" data-tab="ships">{{localize "SIMPLE.Armies"}}</a>
         <a class="item" data-tab="notes">{{localize "SIMPLE.Notes"}}</a>
     </nav>
 
@@ -21,37 +21,33 @@
         {{!-- Ships Tab --}}
         <div class="tab attributes" data-group="primary" data-tab="ships">
 			<header class="attributes-header flexrow">
-                <span class="attribute-col-fleet">{{localize "SIMPLE.Fleet.ShipName"}}</span>
-                <span class="attribute-col-fleet">{{localize "SIMPLE.Fleet.Health"}}</span>
-                <span class="attribute-col-fleet">{{localize "SIMPLE.Fleet.Fighting"}}</span>				
-                <span class="attribute-col-fleet">{{localize "SIMPLE.Fleet.Cargo"}}</span>
-                <span class="attribute-col-fleet">{{localize "SIMPLE.Fleet.Location"}}</span>				
+                <span class="attribute-col-fleet">{{localize "SIMPLE.Army.Name"}}</span>
+                <span class="attribute-col-fleet">{{localize "SIMPLE.Army.Strength"}}</span>
+                <span class="attribute-col-fleet">{{localize "SIMPLE.Army.Morale"}}</span>				
+                <span class="attribute-col-fleet">{{localize "SIMPLE.Army.Garrison"}}</span>				
                 <span class="attribute-col-fleet"></span>
             </header>
 			
             <ol class="item-list">
 				{{#each data.items as |item id|}}
-					{{#if item.data.isShip}}
+					{{#if item.data.isArmy}}
 						<li class="item flexrow" data-item-id="{{item._id}}">
 							<div class="attribute-col-fleet-lg">
 								<h4 class="item-name">{{item.name}}</h4>
 							</div>
 							<div class="attribute-col-fleet-sm">
-								{{item.data.health}} / {{item.data.max_health}}
+								{{item.data.strength}} / {{item.data.max_strength}}
 							</div>
 							<div class="attribute-col-fleet-sm">
-								{{item.data.fighting}} / {{item.data.max_fighting}}
-							</div>
-							<div class="attribute-col-fleet-lg">
-								{{item.data.cargo}} / {{item.data.cargo_units}}
+								{{item.data.morale}} / {{item.data.max_morale}}
 							</div>
 							<div class="attribute-col-fleet-sm">
-								{{item.data.location}}
+								{{item.data.garrison}}
 							</div>
 							<div class="attribute-col-fleet-sm">
 								<div class="item-controls">
-									<a class="item-control" title="{{ localize "SIMPLE.ShipEdit" }}" data-action="edit_ship"><i class="fas fa-edit"></i></a>
-									<a class="item-control" title="{{ localize "SIMPLE.ShipDelete" }}" data-action="delete_ship"><i class="fas fa-trash"></i></a>
+									<a class="item-control" title="{{ localize "SIMPLE.ArmyEdit" }}" data-action="edit_army"><i class="fas fa-edit"></i></a>
+									<a class="item-control" title="{{ localize "SIMPLE.ArmyDelete" }}" data-action="delete_army"><i class="fas fa-trash"></i></a>
 								</div>
 							</div>
 						</li>
@@ -59,7 +55,7 @@
 				{{/each}}
 			</ol>
 			<p>
-                <a class="item-control" title="{{ localize "SIMPLE.ShipCreate" }}" data-action="create_ship"><i class="fas fa-plus"></i> {{ localize "SIMPLE.ShipCreate" }}</a>
+                <a class="item-control" title="{{ localize "SIMPLE.ArmyCreate" }}" data-action="create_army"><i class="fas fa-plus"></i> {{ localize "SIMPLE.ArmyCreate" }}</a>
             </p>
         </div>
 
